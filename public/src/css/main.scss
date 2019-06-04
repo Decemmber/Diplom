@@ -1,0 +1,192 @@
+$color: #912346;
+
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    color: #000;
+    font-family: "PT Sans Narrow", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 700;
+  }
+
+ul,
+li {
+   display: block;
+   padding: 0;
+   margin: 0;
+}
+
+
+/*navifgation*/
+.header {
+    padding: 20px 0;
+    background: #000;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu__item {
+  margin-left: 37px;
+  a {
+    font-size: 20px;
+    color: #fff;
+    text-transform: uppercase;
+  }
+}
+
+#toggle-btn {
+  display: none;
+}
+
+/*main info*/
+
+.main-info {
+  background: url(/img/atlas-continent-country-269850.jpg) no-repeat center;
+  background-size: cover;
+  padding: 40px;
+  .row {
+    margin: 0 auto;
+    padding: 40px 40px;
+    margin-bottom: 35px;
+    background-color: rgba(0,0,0,0.61);
+    color: #fff;
+    h2 {
+      font-size: 60px;
+    }
+    p {
+      font-size: 20px;
+    }
+    ul li a {
+      text-decoration: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
+/*About event*/
+.about-event {
+  margin: 50px 0;
+}
+
+/*features*/
+.features-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: $color;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.features  {
+  text-align: center;
+}
+
+.button-me {
+  text-align: center;
+}
+
+.footer {
+  background: #000;
+  color: #fff;
+  padding-top: 20px;
+  margin-top: 50px;
+}
+
+.button {
+  font: inherit;
+  display: inline-block;
+  padding: 10px 30px;
+  margin-right: 15px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #912346;
+  border: none;
+  cursor: pointer;
+}
+.button:hover, .button:focus, .button:active {
+  background-color: #711431;
+}
+
+#toTop {
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  border: none;
+  font-size: 20px;
+  border-radius: 3px;
+  background: rgb(161, 117, 117);
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 18px;
+  right: 18px;
+  display: none;
+  color: $color;
+  cursor: pointer;
+}
+
+/*slider*/
+.slider {
+  margin-top: 100px;
+}
+.main-content {
+  background-color: #fff;
+  margin-top: 55px;
+  &__title {
+      text-transform: uppercase;
+      font-size: 30px;
+      color: $color;
+      
+  }
+  &__image {
+      max-height: 160px;
+      max-width: 270px;
+      border-radius: 5px;
+  }
+}
+
+.multiple-items {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.dots-style {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  button {
+      background-color: transparent;
+      border-radius: 50%;
+      border-color: $color;
+      font-size: 0; 
+      height: 15px;
+      width: 15px;
+      list-style: none;
+      margin-left: 15px;
+      background-origin: border-box;
+      margin-bottom: 50px;
+  }
+  li {
+      list-style: none;
+  }
+  li[class="slick-active"] button {
+      background:$color;
+      border: none;
+      width: 10px;
+      height: 10px;
+  }
+}
