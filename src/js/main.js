@@ -69,7 +69,13 @@ $(window).scroll(function () {
 
 document.getElementById('send').addEventListener('click', takedata);
 function takedata() {
-  var login = document.getElementById('usermail').value;
-  var pass = document.getElementById('userpass').value;
+  var email = document.getElementById('usermail').value;
+  var password = document.getElementById('userpass').value;
   console.log(login,pass);
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
 }
