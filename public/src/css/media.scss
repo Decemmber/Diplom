@@ -72,6 +72,9 @@ $color: #912346;
     }
 }
 @media only screen and (max-width: 478px) {
+    iframe {
+        display: none;
+    }
     body {
         p {
             font-size: 16px;
@@ -122,13 +125,48 @@ $color: #912346;
          margin-bottom: 10px;
          font-size: 15px;
      }
+     .subm {
+         font-size: 15px;
+     }
      .button {
          padding: 5px 15px;
      }
      iframe {
          height: 150px;
      }
+     .scheme {
+        .links {
+            margin-left: 10px;
+        }
+        img {
+            width: 350px;
+          }
+        }
+        .login-container {
+            background: url(/img/IMG_7616.jpg) no-repeat;
+            background-size: cover;
+            
+        }
+        .modalDialog > div {
+            width: 330px;
+        }
+
+        
+        .body {
+            
+        
+        }
+        .login-form {
+            margin-top: -100px;
+            margin-bottom: 0px;
+
+        .container{
+            height: 100vh;
+            width:370px;
+        }
+    }
 }
+
 
 /*slider*/
 @media only screen and (min-width: 768px) and (max-width: 1199px) {

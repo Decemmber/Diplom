@@ -82,8 +82,8 @@ function takedata() {
 
 document.getElementById('vhod').addEventListener('click', login);
 function login() {
-  var email = document.getElementById('usermail').value;
-  var password = document.getElementById('userpass').value;
+  var email = document.getElementById('useremail').value;
+  var password = document.getElementById('userpassword').value;
   firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;

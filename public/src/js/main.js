@@ -67,4 +67,27 @@ $(window).scroll(function () {
   }
 });})
 
+document.getElementById('send').addEventListener('click', takedata);
+function takedata() {
+  var email = document.getElementById('usermail').value;
+  var password = document.getElementById('userpass').value;
+  
+  firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+}
 
+document.getElementById('vhod').addEventListener('click', login);
+function login() {
+  var email = document.getElementById('useremail').value;
+  var password = document.getElementById('userpassword').value;
+  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+    // Handle Errors here.
+    var errorCode = error.code;
+    var errorMessage = error.message;
+    // ...
+  });
+}
