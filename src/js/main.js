@@ -67,4 +67,9 @@ $(window).scroll(function () {
   }
 });})
 
-
+document.getElementById('send').addEventListener('click', takedata);
+function takedata() {
+  var login = document.getElementById('usermail').value;
+  var pass = document.getElementById('userpass').value;
+  console.log(login,pass);
+}
