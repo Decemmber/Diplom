@@ -1,6 +1,5 @@
 $color: #912346;
 
-
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +32,7 @@ li {
 }
 
 .menu__item {
+  white-space: nowrap;
   margin-left: 37px;
   a {
     font-size: 20px;
