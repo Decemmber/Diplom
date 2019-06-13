@@ -14,5 +14,5 @@ firebase.auth().onAuthStateChanged(function (user) {
         lk_li.style = "display: none";
         console.log('no user', user);
     }
-    window.location.replace("lk.html");
+   
 });

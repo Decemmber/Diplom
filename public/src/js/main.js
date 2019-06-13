@@ -87,7 +87,11 @@ document.getElementById('vhod').addEventListener('click', login);
 function login() {
   var email = document.getElementById('useremail').value;
   var password = document.getElementById('userpassword').value;
-  firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+  firebase.auth().signInWithEmailAndPassword(email, password)
+  .then(function(user) {
+    window.location.replace("index.html");
+  })
+  .catch(function(error) {
     // Handle Errors here.
     var errorCode = error.code;
     var errorMessage = error.message;
