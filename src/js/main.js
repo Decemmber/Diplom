@@ -67,6 +67,7 @@ $(window).scroll(function () {
   }
 });})
 
+if(document.getElementById('send') !== null) {
 document.getElementById('send').addEventListener('click', takedata);
 function takedata() {
   var email = document.getElementById('usermail').value;
@@ -79,7 +80,9 @@ function takedata() {
     // ...
   });
 }
+}
 
+if(document.getElementById('vhod') !== null) {
 document.getElementById('vhod').addEventListener('click', login);
 function login() {
   var email = document.getElementById('useremail').value;
@@ -90,4 +93,5 @@ function login() {
     var errorMessage = error.message;
     // ...
   });
+}
 }
