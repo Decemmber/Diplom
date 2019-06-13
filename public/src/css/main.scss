@@ -1,6 +1,5 @@
 $color: #912346;
 
-
 * {
     margin: 0;
     padding: 0;
@@ -27,12 +26,15 @@ li {
     padding: 20px 0;
     background: #000;
 }
-
+#lk_li {
+  display: none;
+}
 .menu-icon {
   display: none;
 }
 
 .menu__item {
+  white-space: nowrap;
   margin-left: 37px;
   a {
     font-size: 20px;
@@ -218,7 +220,7 @@ li {
     width: 48%;
   }
   .mail {
-    width: 40%;
+    width: 80%;
   }
   .subm{
     text-align: center;

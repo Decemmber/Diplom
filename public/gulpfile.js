@@ -14,7 +14,6 @@ const cssFiles = [
    './src/css/fonts.scss'
 ]
 
-
 //Порядок подключения js файлов
 const jsFiles = [
    './src/js/main.js'

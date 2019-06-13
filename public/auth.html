@@ -18,15 +18,15 @@
    <div class="login-container">
     <div class="login-form">
         <div class="container">
-            <form class="login" id="login">
+            
                 <div class="dws-input">
-                    <input type="text" name="username" placeholder="Введите логин" id="useremail">
+                    <input type="text" name="username" placeholder="Введите почту" id="useremail">
                 </div>
                 <div class="dws-input">
                     <input type="password" name="password" placeholder="Введите пароль" id="userpassword">
                 </div>
-                <input class="dws-submit" type="submit" name="submit" value="ВОЙТИ" id="vhod"><br />
-            </form>
+                <button class="dws-submit" type="submit" name="submit" value="ВОЙТИ" id="vhod">ВХОД</button><br/>
+            
         </div>
     </div>
 </div>
@@ -47,6 +47,7 @@
         crossorigin="anonymous"></script>
     <script src="/build/js/jquery-3.4.1.min.js"></script>
     <script src="build/js/script.js"></script>
+    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
@@ -73,7 +74,7 @@
         // Initialize Firebase
         firebase.initializeApp(firebaseConfig);
     </script>
-
+    
 </body>
 
 </html>

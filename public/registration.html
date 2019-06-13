@@ -20,7 +20,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-xl-2 logo-bar">
-                    <img src="img/logo.png" alt="logo" class="logo">
+                    <p><a href="index.html"><img src="img/logo.png" class="logo"></a></p>
                     <button class="menu-icon"><i class="fas fa-bars"></i></button>
                 </div>
                 <div class="col-xl-8 ml-auto align-self-center">
@@ -35,11 +35,14 @@
                             <li class="menu__item">
                                 <a href="Программа-Экспоцентр-07.pdf">ПРОГРАММА</a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item" id="registration_li">
                                 <a href="registration.html">РЕГИСТРАЦИЯ</a>
                             </li>
-                            <li class="menu__item">
+                            <li class="menu__item" id="signin_li">
                                 <a class="login" href="auth.html">Вход</a>
+                            </li>
+                            <li class="menu__item" id="lk_li">
+                                <a href="lk.html">ЛИЧНЫЙ КАБИНЕТ</a>
                             </li>
                         </ul>
                         <a href="#" id="toggle-btn">GEO SIBIR</a>
@@ -56,7 +59,7 @@
                     <p>ФИО</p>
                     <input class="fio" id="surname" type="text">
                     <input class="fio" id="name" type="text">
-                    
+
                     <p>МЕСТО РАБОТЫ/УЧЕБЫ</p>
                     <input class="regbar" id="work" type="text">
                     <p>ДОЛЖНОСТЬ</p>
@@ -67,7 +70,7 @@
                     <input class="mail" type="email" id="usermail">
                     <div class="col-xl-12 subm">
                         <input type="checkbox" name="" id="check1">
-                        <label class="subm" for="check1">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</label>    
+                        <label class="subm" for="check1">СОГЛАСЕН НА ОБРАБОТКУ ПЕРСОНАЛЬНЫХ ДАННЫХ</label>
                     </div>
                     <div class="col-xl-12 d-flex justify-content-center">
                         <button id="send" class="button" type="submit">ОТПРАВИТЬ</button>
@@ -86,7 +89,7 @@
                     ИНТЕРЭКСПО ГЕО-СИБИРЬ
                     <br> «Новосибирск Экспоцентр», ул. Станционная, 104
                     <br>
-                    
+
                     Телефон: +7 (999) 666-22-66
                 </p>
 
@@ -106,32 +109,34 @@
         crossorigin="anonymous"></script>
     <script src="/build/js/jquery-3.4.1.min.js"></script>
     <script src="build/js/script.js"></script>
+    
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
 
 
 
 
-<!-- Add Firebase products that you want to use -->
-<script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/6.1.0/firebase-auth.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyD24xipwnLnrhhYzAkCt6ZWADiVUJ8Spkw",
-    authDomain: "geosibd-8be42.firebaseapp.com",
-    databaseURL: "https://geosibd-8be42.firebaseio.com",
-    projectId: "geosibd-8be42",
-    storageBucket: "geosibd-8be42.appspot.com",
-    messagingSenderId: "475935359633",
-    appId: "1:475935359633:web:789a9ea1c5db44b2"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD24xipwnLnrhhYzAkCt6ZWADiVUJ8Spkw",
+            authDomain: "geosibd-8be42.firebaseapp.com",
+            databaseURL: "https://geosibd-8be42.firebaseio.com",
+            projectId: "geosibd-8be42",
+            storageBucket: "geosibd-8be42.appspot.com",
+            messagingSenderId: "475935359633",
+            appId: "1:475935359633:web:789a9ea1c5db44b2"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="./firebase.js"></script>
 
 </body>
 
